@@ -1,0 +1,14 @@
+name: "Greet User"
+description: "A simple custom action that greets a user"
+author: "Soz"
+branding:
+  color: blue
+  icon: smiley
+inputs:
+  username:
+    description: "Name of the user"
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - run: echo "Hello ${{ inputs.username }} 👋"
